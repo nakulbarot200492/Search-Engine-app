@@ -49,7 +49,7 @@ if prompt:=st.chat_input(placeholder="what is machine learning"):
     llm=ChatGroq(groq_api_key=api_key,model_name="Llama3-8b-8192",streaming=True)
     tools=[wiki,arxiv,search]
 
-    search_agent=initialize_agent(tools,llm, agent=AgentType.ZERO_SHOT_REACT_DESCRIPTION,handling_parsing_errors=True)
+    search_agent=initialize_agent(tools,llm, agent=AgentType.ZERO_SHOT_REACT_DESCRIPTION,handle_parsing_errors=True)
 
     ## Generating and Displaying the Assistant's Response
 
