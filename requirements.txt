@@ -31,7 +31,9 @@ unstructured
 pytube
 numexpr
 huggingface_hub
-langchain==0.2.16
-langchain-core==0.2.16
-pydantic>=2.7.4
 gradio
+langchain==0.2.16
+langchain-core>=0.2.38
+pydantic>=2.7.4
+
+
